@@ -1,0 +1,6 @@
+{
+  "name": "Aishwaryam Commercial Spaces",
+  "description": "Premium Commercial Office and Retail Spaces in Moshi and Chikhali, North Pune by Aishwaryam Group",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;450;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  @keyframes subtle-zoom {
+    0% {
+      transform: scale(1.02);
+    }
+    100% {
+      transform: scale(1.06);
+    }
+  }
+
+  @keyframes slide-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scale-in {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .animate-subtle-zoom {
+    animation: subtle-zoom 25s ease-in-out infinite alternate;
+  }
+
+  .animate-slide-down {
+    animation: slide-down 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+}
